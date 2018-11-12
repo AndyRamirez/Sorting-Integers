@@ -4,7 +4,7 @@
 #include <stdio.h>
 
 int main(){
-	int i=0;
+	int i,k=0;
 	int N=10;
 	int array[N];	
 	//TODO: Read 10 numbers from user
@@ -16,5 +16,9 @@ int main(){
 	//
 	//
 	//TODO: Print them
+	printf("impresion\n");
+	for (k=0; k<10; k++){
+	printf("%d\n",array[k]);
+	}
 
 }
