@@ -3,19 +3,20 @@
 */
 #include <stdio.h>
 
+#define N 10
+
 int main(){
 	int i,k,l,y=0;
-	int N=10;
 	int aux =0;
-	int array[N];	
-	//TODO: Read 10 numbers from user
-	for (i=0; i<10; i++){
+	int array[N]={0};	
+	//TODO: Read N numbers from user
+	for (i=0; i<N; i++){
 		scanf ("%d", &array[i]);
 	}
 
 	//TODO: Sort them 
-	for (l=0; l<10; l++){
-	for (y=0; y<10; y++){
+	for (l=0; l<N-1; l++){
+	for (y=0; y<N-1; y++){
 	if (array[y]>array[y+1]){
 		aux = array[y];
 		array[y]= array[y+1];
@@ -25,7 +26,7 @@ int main(){
 	}
 	//TODO: Print them
 	printf("impresion\n");
-	for (k=0; k<10; k++){
+	for (k=0; k<N; k++){
 	printf("%d\n",array[k]);
 	}
 
