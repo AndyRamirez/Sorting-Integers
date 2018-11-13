@@ -9,6 +9,7 @@ int main(){
 	int aux =0;
 	int array[N];	
 	//TODO: Read 10 numbers from user
+	printf("Add 10 numbers, introduce a enter between numbers.\n");
 	for (i=0; i<10; i++){
 		scanf ("%d", &array[i]);
 	}
@@ -24,7 +25,7 @@ int main(){
 	}
 	}
 	//TODO: Print them
-	printf("impresion\n");
+	printf("Sorted numbers:\n");
 	for (k=0; k<10; k++){
 	printf("%d\n",array[k]);
 	}
